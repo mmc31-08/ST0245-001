@@ -2,25 +2,6 @@ public class Arbol {
     private Nodo raiz;
 
     public Arbol() {
-
-    }
-
-    public boolean existe(int busqueda) {
-        return existe(this.raiz, busqueda);
-    }
-
-    private boolean existe(Nodo n, int busqueda) {
-        if (n == null) {
-            return false;
-        }
-        if (n.getDato() == busqueda) {
-            return true;
-        } else if (busqueda < n.getDato()) {
-            return existe(n.getIzquierda(), busqueda);
-        } else {
-            return existe(n.getDerecha(), busqueda);
-        }
-
     }
 
     public void insertar(int dato) {
